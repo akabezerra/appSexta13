@@ -9,13 +9,13 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    @IBOutlet weak var filmesCollectionView: UICollectionView!
+    @IBOutlet weak var filmesHomeCollectionView: UICollectionView!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        filmesCollectionView.dataSource = self
-        filmesCollectionView.delegate = self
+        filmesHomeCollectionView.dataSource = self
+        filmesHomeCollectionView.delegate = self
         
 
     }
@@ -28,11 +28,12 @@ class HomeViewController: UIViewController {
 extension HomeViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
         0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        
         return UICollectionViewCell()
         
     }

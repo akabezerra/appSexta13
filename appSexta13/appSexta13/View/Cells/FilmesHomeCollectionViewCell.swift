@@ -7,10 +7,11 @@
 
 import UIKit
 
-class FilmesCollectionViewCell: UICollectionViewCell {
+class FilmesHomeCollectionViewCell: UICollectionViewCell {
     
     
     @IBOutlet weak var posterFilme: UIImageView!
+    
     @IBOutlet weak var nomeFilmeLabel: UILabel!
     
     

@@ -7,8 +7,13 @@
 
 import UIKit
 
-class FilmesTableViewCell: UITableViewCell {
-
+class FilmesBuscaTableViewCell: UITableViewCell {
+    
+    
+    @IBOutlet weak var posterFilme: UIImageView!
+    
+    @IBOutlet weak var nomeFilmeLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

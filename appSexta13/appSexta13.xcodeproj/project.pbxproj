@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B59A17F28398C340062F40F /* FilmesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B59A17E28398C340062F40F /* FilmesTableViewCell.swift */; };
+		2B59A17F28398C340062F40F /* FilmesBuscaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B59A17E28398C340062F40F /* FilmesBuscaTableViewCell.swift */; };
+		2B59A183283993D40062F40F /* FilmesFiltroCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B59A182283993D40062F40F /* FilmesFiltroCollectionViewCell.swift */; };
+		2B59A185283998640062F40F /* AmigoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B59A184283998640062F40F /* AmigoTableViewCell.swift */; };
 		2B956E5E283974FE00D90284 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B956E5D283974FE00D90284 /* AppDelegate.swift */; };
 		2B956E60283974FE00D90284 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B956E5F283974FE00D90284 /* SceneDelegate.swift */; };
 		2B956E65283974FE00D90284 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B956E63283974FE00D90284 /* Main.storyboard */; };
@@ -21,7 +23,7 @@
 		2B956E972839788500D90284 /* FiltroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B956E962839788500D90284 /* FiltroViewController.swift */; };
 		2B956E992839789900D90284 /* AmigosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B956E982839789900D90284 /* AmigosViewController.swift */; };
 		2B956E9B283978A800D90284 /* ConfigsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B956E9A283978A800D90284 /* ConfigsViewController.swift */; };
-		2B956E9D28397D8200D90284 /* FilmesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B956E9C28397D8200D90284 /* FilmesCollectionViewCell.swift */; };
+		2B956E9D28397D8200D90284 /* FilmesHomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B956E9C28397D8200D90284 /* FilmesHomeCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2B59A17E28398C340062F40F /* FilmesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmesTableViewCell.swift; sourceTree = "<group>"; };
+		2B59A17E28398C340062F40F /* FilmesBuscaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmesBuscaTableViewCell.swift; sourceTree = "<group>"; };
+		2B59A182283993D40062F40F /* FilmesFiltroCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmesFiltroCollectionViewCell.swift; sourceTree = "<group>"; };
+		2B59A184283998640062F40F /* AmigoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmigoTableViewCell.swift; sourceTree = "<group>"; };
 		2B956E5A283974FE00D90284 /* appSexta13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appSexta13.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B956E5D283974FE00D90284 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B956E5F283974FE00D90284 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,7 +64,7 @@
 		2B956E962839788500D90284 /* FiltroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltroViewController.swift; sourceTree = "<group>"; };
 		2B956E982839789900D90284 /* AmigosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmigosViewController.swift; sourceTree = "<group>"; };
 		2B956E9A283978A800D90284 /* ConfigsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigsViewController.swift; sourceTree = "<group>"; };
-		2B956E9C28397D8200D90284 /* FilmesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmesCollectionViewCell.swift; sourceTree = "<group>"; };
+		2B956E9C28397D8200D90284 /* FilmesHomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmesHomeCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,8 +175,10 @@
 		2B956E9E28397D9300D90284 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				2B956E9C28397D8200D90284 /* FilmesCollectionViewCell.swift */,
-				2B59A17E28398C340062F40F /* FilmesTableViewCell.swift */,
+				2B956E9C28397D8200D90284 /* FilmesHomeCollectionViewCell.swift */,
+				2B59A17E28398C340062F40F /* FilmesBuscaTableViewCell.swift */,
+				2B59A182283993D40062F40F /* FilmesFiltroCollectionViewCell.swift */,
+				2B59A184283998640062F40F /* AmigoTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -308,14 +314,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B956E9D28397D8200D90284 /* FilmesCollectionViewCell.swift in Sources */,
+				2B956E9D28397D8200D90284 /* FilmesHomeCollectionViewCell.swift in Sources */,
 				2B956E972839788500D90284 /* FiltroViewController.swift in Sources */,
 				2B956E5E283974FE00D90284 /* AppDelegate.swift in Sources */,
 				2B956E952839782E00D90284 /* BuscaViewController.swift in Sources */,
 				2B956E60283974FE00D90284 /* SceneDelegate.swift in Sources */,
 				2B956E9B283978A800D90284 /* ConfigsViewController.swift in Sources */,
-				2B59A17F28398C340062F40F /* FilmesTableViewCell.swift in Sources */,
+				2B59A17F28398C340062F40F /* FilmesBuscaTableViewCell.swift in Sources */,
+				2B59A185283998640062F40F /* AmigoTableViewCell.swift in Sources */,
 				2B956E992839789900D90284 /* AmigosViewController.swift in Sources */,
+				2B59A183283993D40062F40F /* FilmesFiltroCollectionViewCell.swift in Sources */,
 				2B956E932839769700D90284 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
