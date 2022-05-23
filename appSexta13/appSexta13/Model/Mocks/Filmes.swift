@@ -7,7 +7,7 @@
 
 import UIKit
 
-enum FilmeMock {
+enum Filmes {
     
     static let exorcismoEm: Filme = Filme(
         posterFilme: UIImage(named: "exorcismo_em"),
@@ -40,9 +40,9 @@ enum FilmeMock {
             classificacaoIndicativa: 12
     )
     
-    static let evocacao = Filme(
+    static let invocacao = Filme(
             posterFilme: UIImage(named: "evocacao"),
-            nomeFilme: "Evocação do Mal",
+            nomeFilme: "Invocação do Mal",
             anoFilme: "0000",
             descricaoFilme: "descricao",
             classificacaoIndicativa: 16

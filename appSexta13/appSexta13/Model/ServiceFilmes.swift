@@ -13,12 +13,12 @@ class ServiceFilmes {
     func trazListaDeFilmes() -> [Filme] {
         
         return [
-            FilmeMock.exorcismoEm,
-            FilmeMock.albergue,
-            FilmeMock.annabele,
-            FilmeMock.evocacao,
-            FilmeMock.hereditario,
-            FilmeMock.orfa
+            Filmes.exorcismoEm,
+            Filmes.albergue,
+            Filmes.annabele,
+            Filmes.invocacao,
+            Filmes.hereditario,
+            Filmes.orfa
         ]
     }
     

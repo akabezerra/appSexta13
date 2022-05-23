@@ -18,16 +18,18 @@ class ServiceAmigos {
                 nomeAmigo: "Renato Mendes",
                 fotoAmigo: UIImage(named: "avatar"),
                 filmesQueGosto: [
-                    FilmeMock.orfa,
-                    FilmeMock.hereditario
+                    Filmes.orfa,
+                    Filmes.hereditario,
+                    Filmes.exorcismoEm
                 ]
             ),
             Amigo(
                 nomeAmigo: "Bilica",
                 fotoAmigo: UIImage(named: "avatar"),
                 filmesQueGosto: [
-                    FilmeMock.evocacao,
-                    FilmeMock.annabele
+                    Filmes.invocacao,
+                    Filmes.annabele,
+                    Filmes.albergue
                 ]
             )
         ]

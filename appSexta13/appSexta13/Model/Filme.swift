@@ -13,7 +13,6 @@ class Filme {
     let nomeFilme: String
     let anoFilme: String
     let descricaoFilme: String
-    let amigosQueGostamDoFilme: [Amigo] = []
     let classificacaoIndicativa: Int
     
     init(posterFilme: UIImage?, nomeFilme: String, anoFilme: String, descricaoFilme: String, classificacaoIndicativa: Int) {
