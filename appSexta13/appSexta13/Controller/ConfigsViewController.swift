@@ -12,26 +12,23 @@ class ConfigsViewController: UIViewController {
     let comoEstou = ["Ótimo", "Bem", "Mais ou Menos", "Mal", "Péssimo"]
     let userDefaults = UserDefaults.standard
     
-    
+    //MARK: - IBOUTLETS
     @IBOutlet weak var comoEstouPickerView: UIPickerView!
     
     @IBOutlet weak var ultimoAcessoDatePicker: UIDatePicker!
     @IBOutlet weak var proximoFilmeDatePicker: UIDatePicker!
-    
-    
-    
+    //MARK: - Override funcs
     override func viewDidLoad() {
         super.viewDidLoad()
         comoEstouPickerView.dataSource = self
         comoEstouPickerView.delegate = self
         
-        let dataAtual = Date()
-        
-        trazerDataUltimoAcesso(dataAtual)
-        guardarDataProximoFilme(dataAtual)
+        guardarDataUltimoAcesso()
+        guardarDataProximoFilme()
     }
     //MARK: - Funções privadas
-    private func trazerDataUltimoAcesso(_ dataAtual: Date){
+    private func guardarDataUltimoAcesso(){
+        let dataAtual = Date()
         if let ultimoAcesso = userDefaults.object(forKey: "ultimoAcesso") as? Date {
             ultimoAcessoDatePicker.date = ultimoAcesso
         }else {
@@ -41,9 +38,10 @@ class ConfigsViewController: UIViewController {
         }
     }
     
-    private func guardarDataProximoFilme(_ dataAtual: Date){
-        if let proximoFilme = userDefaults.object(forKey: "proximoFilme") as? Date {
-            proximoFilmeDatePicker.date = proximoFilme
+    private func guardarDataProximoFilme(){
+        let dataAtual = Date()
+        if let dataproximoFilme = userDefaults.object(forKey: "proximoFilme") as? Date {
+            proximoFilmeDatePicker.date = dataproximoFilme
         } else {
             proximoFilmeDatePicker.date = dataAtual
         }

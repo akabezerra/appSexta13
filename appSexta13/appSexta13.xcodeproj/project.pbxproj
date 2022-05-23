@@ -184,9 +184,9 @@
 		2B956E8F283975B800D90284 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2BF3B384283AF064006D4BF7 /* Mocks */,
-				2B59A1882839C35E0062F40F /* Amigo.swift */,
 				2B59A1862839C1AA0062F40F /* Filme.swift */,
+				2BF3B385283AF077006D4BF7 /* Filmes.swift */,
+				2B59A1882839C35E0062F40F /* Amigo.swift */,
 				2B59A18A2839C5CB0062F40F /* ServiceFilmes.swift */,
 				2BF3B382283AEB5D006D4BF7 /* ServiceAmigos.swift */,
 			);
@@ -203,14 +203,6 @@
 				2BF3B38A283B0AD2006D4BF7 /* FilmesAmigoCollectionViewCell.swift */,
 			);
 			path = Cells;
-			sourceTree = "<group>";
-		};
-		2BF3B384283AF064006D4BF7 /* Mocks */ = {
-			isa = PBXGroup;
-			children = (
-				2BF3B385283AF077006D4BF7 /* Filmes.swift */,
-			);
-			path = Mocks;
 			sourceTree = "<group>";
 		};
 		2BF3B387283B0445006D4BF7 /* AmigosViewController */ = {

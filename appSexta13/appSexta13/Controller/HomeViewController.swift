@@ -17,9 +17,6 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         filmesHomeCollectionView.dataSource = self
-        filmesHomeCollectionView.delegate = self
-        
-
     }
     
 
@@ -47,8 +44,4 @@ extension HomeViewController: UICollectionViewDataSource {
     }
     
 }
-//MARK: - CollectionView Delegate
-extension HomeViewController: UICollectionViewDelegate {
 
-    
-}

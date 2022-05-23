@@ -9,12 +9,11 @@ import UIKit
 
 class AmigosViewController: UIViewController {
     
-    
     @IBOutlet weak var amigosTableViewCell: UITableView!
     
     let serviceAmigos = ServiceAmigos()
     var amigo:  Amigo?
-    
+    //MARK: - Override funcs
     override func viewDidLoad() {
         super.viewDidLoad()
         amigosTableViewCell.dataSource = self
@@ -27,9 +26,8 @@ class AmigosViewController: UIViewController {
         
         infoAmigoVc.configInfoAmigo(amigo)
     }
-    
 }
-
+//MARK: - TableView dataSource & Delegate
 extension AmigosViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         serviceAmigos.trazListaAmigos().count
@@ -51,10 +49,5 @@ extension AmigosViewController: UITableViewDataSource, UITableViewDelegate {
         amigo =  serviceAmigos.trazListaAmigos()[indexPath.row]
         
         performSegue(withIdentifier: "infoAmigo", sender: nil)
-        
     }
-    
-    
-    
-    
 }

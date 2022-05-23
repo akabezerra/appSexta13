@@ -18,7 +18,6 @@ class BuscaViewController: UIViewController {
     var filme: Filme?
     
     //MARK: - Override Funcs
-
     override func viewDidLoad() {
         super.viewDidLoad()
         filmesTableView.dataSource = self
@@ -38,7 +37,6 @@ class BuscaViewController: UIViewController {
         
     }
     //MARK: - Funções privadas
-    
     private func popularTodosFilmesNaTableView(){
         filmesFiltrados = serviceFilmes.trazListaDeFilmes()
     }

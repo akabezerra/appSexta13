@@ -9,22 +9,29 @@ import UIKit
 
 class InfoAmigoViewController: UIViewController {
     
+    //MARK: - IBOUTLETS
     @IBOutlet weak var fotoAmigo: UIImageView!
     @IBOutlet weak var nomeAmigo: UILabel!
     
     @IBOutlet weak var filmesEmComumCollectionView: UICollectionView!
   
     var amigo: Amigo?
-    
-    
+
+    //MARK: - Override funcs
     override func viewDidLoad() {
         super.viewDidLoad()
         filmesEmComumCollectionView.dataSource = self
         filmesEmComumCollectionView.delegate = self
+        
+        atribuirInfosDoAmigo()
+    }
+    //MARK: - Funções privadas
+    private func atribuirInfosDoAmigo(){
         fotoAmigo.image = amigo?.fotoAmigo
         nomeAmigo.text = amigo?.nomeAmigo
     }
-    
+
+    //MARK: - Funções publicas
     func configInfoAmigo(_ amigo: Amigo){
         self.amigo = amigo
         

@@ -9,6 +9,8 @@ import UIKit
 
 class DetalhesFilmeViewController: UIViewController {
     
+    //MARK: - IBOUTLETS
+
     @IBOutlet weak var posterFilme: UIImageView!
     
     @IBOutlet weak var nomeFilmeLabel: UILabel!
@@ -20,24 +22,19 @@ class DetalhesFilmeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        atribuirInfo()
+        atribuirInfosDoFilme()
     }
-    
-   private func atribuirInfo(){
+    //MARK: - Funções privadas
+   private func atribuirInfosDoFilme(){
         posterFilme.image = filme?.posterFilme
         nomeFilmeLabel.text = filme?.nomeFilme
         anoFilmeLabel.text = filme?.anoFilme
         descricaoFilme.text = filme?.descricaoFilme
         
     }
-    
+    //MARK: - Funções públicas
     func configVc(_ filme: Filme?){
         
         self.filme = filme
     }
-    
-    
-
-    
-
 }

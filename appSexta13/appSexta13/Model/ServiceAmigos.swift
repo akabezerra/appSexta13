@@ -24,15 +24,22 @@ class ServiceAmigos {
                 ]
             ),
             Amigo(
-                nomeAmigo: "Bilica",
+                nomeAmigo: "Vinicius Folador",
                 fotoAmigo: UIImage(named: "avatar"),
                 filmesQueGosto: [
                     Filmes.invocacao,
-                    Filmes.annabele,
                     Filmes.albergue
+                ]
+            ),
+            Amigo(
+                nomeAmigo: "Jessica Santana",
+                fotoAmigo: UIImage(named: "jessica"),
+                filmesQueGosto: [
+                    Filmes.exorcismoEm,
                 ]
             )
         ]
+        
         
     }
 }

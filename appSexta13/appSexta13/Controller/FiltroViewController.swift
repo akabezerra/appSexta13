@@ -9,6 +9,8 @@ import UIKit
 
 class FiltroViewController: UIViewController {
     
+    //MARK: - IBOUTLETS
+
     @IBOutlet weak var filtroSegmentedControl: UISegmentedControl!
     
     @IBOutlet weak var filmesFiltroCollectionView: UICollectionView!
@@ -17,7 +19,8 @@ class FiltroViewController: UIViewController {
     var filmes18: [Filme] = []
     var filmesKids: [Filme] = []
     var filmesFiltrados: [Filme] = []
-    
+    //MARK: - Override funcs
+
     override func viewDidLoad() {
         super.viewDidLoad()
         filmesFiltroCollectionView.delegate = self
