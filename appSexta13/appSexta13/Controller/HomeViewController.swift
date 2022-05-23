@@ -11,6 +11,8 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var filmesHomeCollectionView: UICollectionView!
     
+    let serviceFilmes = ServiceFilmes()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,13 +30,19 @@ class HomeViewController: UIViewController {
 extension HomeViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        0
+        serviceFilmes.trazListaDeFilmes().count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
+        let filme = serviceFilmes.trazListaDeFilmes()[indexPath.row]
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "filmeCell", for: indexPath) as? FilmesHomeCollectionViewCell
         
-        return UICollectionViewCell()
+        cell?.nomeFilmeLabel.text = filme.nomeFilme
+        cell?.posterFilme.image = filme.posterFilme
+        
+        
+        return cell ?? UICollectionViewCell()
         
     }
     
@@ -42,6 +50,5 @@ extension HomeViewController: UICollectionViewDataSource {
 //MARK: - CollectionView Delegate
 extension HomeViewController: UICollectionViewDelegate {
 
-    
     
 }

@@ -25,28 +25,33 @@ class ConfigsViewController: UIViewController {
         comoEstouPickerView.dataSource = self
         comoEstouPickerView.delegate = self
         
-        let dataDeHoje = Date()
+        let dataAtual = Date()
         
+        trazerDataUltimoAcesso(dataAtual)
+        guardarDataProximoFilme(dataAtual)
+    }
+    //MARK: - Funções privadas
+    private func trazerDataUltimoAcesso(_ dataAtual: Date){
         if let ultimoAcesso = userDefaults.object(forKey: "ultimoAcesso") as? Date {
             ultimoAcessoDatePicker.date = ultimoAcesso
         }else {
-            
-            ultimoAcessoDatePicker.date = dataDeHoje
-            //
-            userDefaults.set(dataDeHoje, forKey: "ultimoAcesso")
+            ultimoAcessoDatePicker.date = dataAtual
+            // Setar no userDefaults que é para guardar data atual
+            userDefaults.set(dataAtual, forKey: "ultimoAcesso")
         }
-        
+    }
+    
+    private func guardarDataProximoFilme(_ dataAtual: Date){
         if let proximoFilme = userDefaults.object(forKey: "proximoFilme") as? Date {
             proximoFilmeDatePicker.date = proximoFilme
         } else {
-            proximoFilmeDatePicker.date = dataDeHoje
+            proximoFilmeDatePicker.date = dataAtual
         }
-        
     }
-    
-    
+    //MARK: - ACTIONS
     @IBAction func proximoFilmeButton(_ sender: Any) {
         
+        //Setar localmente(userDefaults) a data que o usuário selecionou
         userDefaults.set(proximoFilmeDatePicker.date, forKey: "proximoFilme")
     }
     

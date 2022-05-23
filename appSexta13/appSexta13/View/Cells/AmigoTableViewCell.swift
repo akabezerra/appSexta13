@@ -19,13 +19,15 @@ class AmigoTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func cellConfig(_ amigo: Amigo){
+        
+        fotoAmigo.image = amigo.fotoAmigo
+        nomeAmigoLabel.text = amigo.nomeAmigo
+        quantidadeEmComumLabel.text = String(amigo.filmesQueGosto.count)
+        
     }
 
 }
