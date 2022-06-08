@@ -33,8 +33,6 @@ class BuscaViewController: UIViewController {
         guard let detalhesFilme =  segue.destination as? DetalhesFilmeViewController else { return }
         
         detalhesFilme.configVc(filme)
-        
-        
     }
     //MARK: - Funções privadas
     private func popularTodosFilmesNaTableView(){
